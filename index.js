@@ -14,7 +14,7 @@ module.exports = function (tasks) {
             let cwd = root.getData('file');
 
             if (cwd) {
-                bowerComponents = getComponentsDirectory(cwd);
+                bowerComponents = getComponentsDirectory(path.dirname(cwd));
             }
         }
     });
@@ -30,7 +30,6 @@ module.exports = function (tasks) {
             }
 
             let root = atRule.getData('file');
-
             if (!root) {
                 return;
             }
@@ -76,7 +75,7 @@ module.exports = function (tasks) {
             let bowerRc = JSON.parse(fs.readFileSync(found));
 
             if (bowerRc.directory) {
-                return path.resolve(cwd, bowerRc.directory);
+                return path.resolve(path.dirname(found), bowerRc.directory);
             }
         }
 
