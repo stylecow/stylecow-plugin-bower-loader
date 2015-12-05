@@ -14,7 +14,7 @@ You write:
 And stylecow resolves the path and converts to:
 
 ```css
-@import url("../../../bower_components/normalize-css/normalize.css");
+@import url("../bower_components/normalize-css/normalize.css");
 ```
 
 You can combine this plugin with [import](https://github.com/stylecow/stylecow-plugin-import) to insert the css code instead resolve only the url.
