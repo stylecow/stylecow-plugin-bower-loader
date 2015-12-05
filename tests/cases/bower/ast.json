@@ -1,0 +1,71 @@
+{
+  "type": "Root",
+  "children": [
+    {
+      "type": "AtRule",
+      "name": "import",
+      "children": [
+        {
+          "type": "Function",
+          "name": "url",
+          "vendor": null,
+          "children": [
+            {
+              "type": "Value",
+              "children": [
+                {
+                  "type": "String",
+                  "name": "../../../bower_components/magnific-popup/dist/magnific-popup.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "AtRule",
+      "name": "import",
+      "children": [
+        {
+          "type": "Function",
+          "name": "url",
+          "vendor": null,
+          "children": [
+            {
+              "type": "Value",
+              "children": [
+                {
+                  "type": "String",
+                  "name": "../../../bower_components/normalize-css/normalize.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "AtRule",
+      "name": "import",
+      "children": [
+        {
+          "type": "Function",
+          "name": "url",
+          "vendor": null,
+          "children": [
+            {
+              "type": "Value",
+              "children": [
+                {
+                  "type": "String",
+                  "name": "../../../bower_components/SelectOrDie/_src/selectordie.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

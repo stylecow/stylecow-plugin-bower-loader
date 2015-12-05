@@ -1,0 +1,33 @@
+{
+  "name": "stylecow-plugin-bower-loader",
+  "description": "Stylecow plugin to resolve automatically the css paths of bower packages",
+  "keywords": [
+    "css",
+    "bower",
+    "loader"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "author": "Oscar Otero <oom@oscarotero.com>",
+  "homepage": "https://github.com/stylecow/stylecow-plugin-bower-loader",
+  "bugs": "https://github.com/stylecow/stylecow-plugin-bower-loader/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stylecow/stylecow-plugin-bower-loader.git"
+  },
+  "scripts": {
+    "test": "mocha tests/cases.js"
+  },
+  "dependencies": {
+    "findup-sync": "^0.3.0"
+  },
+  "devDependencies": {
+    "bower": "^1.6.9",
+    "mocha": "^2.3.3",
+    "stylecow-core": "^2.1.1"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}

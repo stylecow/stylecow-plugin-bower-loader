@@ -1,0 +1,13 @@
+{
+  "name": "stylecow-plugin-bower-loader",
+  "authors": [
+    "oscarotero <oom@oscarotero.com>"
+  ],
+  "description": "Bower loader for stylecow",
+  "license": "MIT",
+  "devDependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "magnific-popup": "~1.0.0",
+    "SelectOrDie": "~0.1.8"
+  }
+}
