@@ -35,7 +35,7 @@ module.exports = function (tasks) {
             }
 
             root = path.dirname(root);
-            let name = atRule.get('String').name, packageDir, main;
+            let name = path.basename(atRule.get('String').name), packageDir, main;
 
             try {
                 let bowerFile = path.join(bowerComponents, name, 'bower.json');
