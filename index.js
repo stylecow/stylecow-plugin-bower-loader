@@ -29,7 +29,8 @@ module.exports = function (tasks) {
                 return;
             }
 
-            let root = atRule.getData('file');
+            let root = atRule.getAncestor('Root').getData('file');
+
             if (!root) {
                 return;
             }
