@@ -21,7 +21,7 @@
     "test": "mocha tests/cases.js"
   },
   "dependencies": {
-    "findup-sync": "^0.3.0"
+    "findup-sync": "^0.4.0"
   },
   "devDependencies": {
     "bower": "^1.7.9",
