@@ -4,7 +4,7 @@ let findup = require('findup-sync');
 let fs     = require('fs');
 let path   = require('path');
 
-module.exports = function (tasks) {
+module.exports = function (tasks, stylecow) {
 
     let bowerComponents;
 
@@ -25,7 +25,7 @@ module.exports = function (tasks) {
             name: 'import'
         },
         fn: function (atRule) {
-            if (!bowerComponents) {
+            if (!bowerComponents || atRule.data['bower-loaded']) {
                 return;
             }
 
@@ -62,7 +62,11 @@ module.exports = function (tasks) {
             if (!main.length) {
                 tasks.log(`Bower module ${name} has no main css file`, atRule);
             } else {
-                main.forEach(file => atRule.codeBefore(`@import url("${file}")`, 'AtRule'));
+                main.forEach(function (file) {
+                    let newImport = stylecow.parse(`@import url("${file}")`, 'AtRule');
+                    newImport.setData('bower-loaded', true);
+                    atRule.before(newImport);
+                });
             }
 
             atRule.detach();

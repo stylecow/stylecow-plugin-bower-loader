@@ -8,6 +8,7 @@
   "devDependencies": {
     "normalize-css": "normalize.css#~3.0.3",
     "magnific-popup": "~1.0.0",
-    "SelectOrDie": "~0.1.8"
+    "SelectOrDie": "~0.1.8",
+    "animate.css": "^3.5.1"
   }
 }

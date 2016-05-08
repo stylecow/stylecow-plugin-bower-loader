@@ -66,6 +66,28 @@
           ]
         }
       ]
+    },
+    {
+      "type": "AtRule",
+      "name": "import",
+      "children": [
+        {
+          "type": "Function",
+          "name": "url",
+          "vendor": null,
+          "children": [
+            {
+              "type": "Value",
+              "children": [
+                {
+                  "type": "String",
+                  "name": "../../../bower_components/animate.css/animate.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
