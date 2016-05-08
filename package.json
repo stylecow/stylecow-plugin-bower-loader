@@ -6,7 +6,7 @@
     "bower",
     "loader"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "node": ">=4.0"
   },
@@ -24,9 +24,9 @@
     "findup-sync": "^0.3.0"
   },
   "devDependencies": {
-    "bower": "^1.6.9",
-    "mocha": "^2.3.3",
-    "stylecow-core": "^2.1.1"
+    "bower": "^1.7.9",
+    "mocha": "^2.4.5",
+    "stylecow-core": "^2.3.0"
   },
   "main": "index.js",
   "license": "MIT"
